@@ -1,0 +1,44 @@
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#aDa1FF var(--percentage), transparent var(--percentage));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.circle span {
+  position: absolute;
+  font-size: 20px;
+  color: #000;
+  z-index: 1;
+}
+
+.circle-10 { --percentage: 10%; }
+.circle-20 { --percentage: 20%; }
+.circle-30 { --percentage: 30%; }
+.circle-40 { --percentage: 40%; }
+.circle-50 { --percentage: 50%; }
+.circle-60 { --percentage: 60%; }
+.circle-70 { --percentage: 70%; }
+.circle-80 { --percentage: 80%; }
+.circle-90 { --percentage: 90%; }
+.circle-100 { --percentage: 100%; }
